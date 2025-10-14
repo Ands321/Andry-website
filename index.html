@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andry.Ofccl - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #111;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            color: #00ffff;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?tech,cyber') no-repeat center center/cover;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: #00ffff;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        .hero button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            background: #00ffff;
+            color: #000;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #00b3b3;
+        }
+
+        section {
+            padding: 80px 50px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: #00ffff;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #00ffff20;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Andry.Ofccl</h1>
+        <nav>
+            <a href="#about">Tentang</a>
+            <a href="#projects">Proyek</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Hai, Saya Andry</h2>
+        <p>Selamat datang di website personal saya. Di sini saya membagikan proyek, ide, dan hal-hal keren lainnya.</p>
+        <button onclick="alert('Terima kasih sudah berkunjung!')">Hubungi Saya</button>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya Andry, seorang kreator yang suka membuat hal-hal keren di dunia digital. Passion saya adalah desain, coding, dan teknologi modern.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyek Saya</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Website Keren</h3>
+                <p>Membuat website interaktif dengan desain modern dan responsif.</p>
+            </div>
+            <div class="card">
+                <h3>Visualisasi Data</h3>
+                <p>Mengubah data menjadi visualisasi yang mudah dipahami dan menarik.</p>
+            </div>
+            <div class="card">
+                <h3>Project AI</h3>
+                <p>Menciptakan solusi berbasis AI untuk meningkatkan produktivitas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:andry@example.com">andry@example.com</a></p>
+        <p>Telegram: <a href="https://t.me/andry">t.me/andry</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Andry.Ofccl. All Rights Reserved.
+    </footer>
+</body>
+</html>
